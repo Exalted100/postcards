@@ -1,16 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Nothing+You+Could+Do&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Jim+Nightshade&family=Nothing+You+Could+Do&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #D5B59C;
+  --foreground: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #D5B59C;
+    --foreground: #000000;
   }
 }
 

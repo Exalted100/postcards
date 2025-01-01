@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        JetbrainsMono: ["JetBrains Mono", "sans-serif"],
+        JimNightshade: ["Jim Nightshade", "sans-serif"],
+      },
     },
   },
   plugins: [],
