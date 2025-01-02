@@ -4,14 +4,14 @@ import { placesData } from "./data";
 
 export default function Home() {
   return (
-    <div className="mx-20 my-20 font-JetbrainsMono">
-      <h1 className="fixed top-20 text-8xl font-JimNightshade z-20">Postcards from Earth</h1>
-      <div className="z-10 h-40 w-100 sticky top-0" style={{backgroundColor: "#D5B59C"}}></div>
+    <div className="mx-5 lg:mx-20 my-6 lg:my-20 font-JetbrainsMono text-base lg:text-xl max-w-screen-2xl xl:mx-auto">
+      <h1 className="fixed top-10 lg:top-20 text-5xl lg:text-8xl font-JimNightshade z-20">Postcards from Earth</h1>
+      <div className="z-10 h-20 lg:h-40 w-100 sticky top-0" style={{backgroundColor: "#D5B59C"}}></div>
 
-      <p className="mb-10 text-xl leading-12">I’m seeing places. And here, you can see them too. <br/>You can see places on this ball we call home, places I’ve been.</p>
+      <p className="mb-10 leading-12">I’m seeing places. And here, you can see them too. <br/>You can see places on this ball we call home, places I’ve been.</p>
 
       { placesData.map((placeData) => {
-        return <><Link key={placeData.slug} className="underline italic text-xl mb-5 block" href={`/places/${placeData.slug}`}>{placeData.title}, {placeData.city} - {placeData.country}</Link></>
+        return <><Link key={placeData.slug} className="underline italic mb-5 block" href={`/places/${placeData.slug}`}>{placeData.title}, {placeData.city} - {placeData.country}</Link></>
       }) }
 
 

@@ -25,7 +25,7 @@ export default async function Place({
   }
 
   return (
-    <div className="mx-5 lg:mx-20 my-6 lg:my-20 font-JetbrainsMono text-base lg:text-xl">
+    <div className="mx-5 lg:mx-20 my-6 lg:my-20 font-JetbrainsMono text-base lg:text-xl max-w-screen-2xl xl:mx-auto">
       <h1 className="fixed top-10 lg:top-20 text-5xl lg:text-8xl font-JimNightshade z-20">
         Postcard from {placesData[currentIndex].title}
       </h1>
@@ -42,7 +42,7 @@ export default async function Place({
           >
             {index % 2 === 0 ? (
               <>
-                <div className="leading-12 inline-block lg:w-2/5">
+                <div className="self-start leading-12 inline-block lg:w-2/5">
                   {val.paragraphs.map((paragraph, index) => {
                     return (
                       <p key={index} className="mb-4">
@@ -74,7 +74,7 @@ export default async function Place({
                     style={{ width: "100%", height: "auto" }}
                   />
                 </div>
-                <div className="leading-12 inline-block lg:w-2/5">
+                <div className="self-start leading-12 inline-block lg:w-2/5">
                   {val.paragraphs.map((paragraph, index) => {
                     return (
                       <p key={index} className="mb-4">
@@ -89,7 +89,7 @@ export default async function Place({
         );
       })}
 
-      <div className="grid-cols-3 w-11/12 mt-20">
+      <div className="grid-cols-3 w-11/12 mt-6 lg:mt-20">
         {currentIndex < 1 ? (
           <div className="w-1/3 inline-block"></div>
         ) : (
