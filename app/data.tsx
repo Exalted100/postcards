@@ -11,8 +11,18 @@ export const placesData = [
                 'London is an interesting place. London is diverse. It has been home to the Romans, the Vikings, the Brits, the Saxons, the English, and many more. And as things worsen in Nigeria, many Nigerians, like me, now come to London.'
             ],
             image: {
-                url: '/lakowe-peppersoup.jpg',
-                alt: 'Lakowe Goat meat peppersoup',
+                url: '/lake-in-field.jpg',
+                alt: 'Lake in the midst of field',
+            },
+        },
+        {
+            paragraphs: ['London is an interesting place. London is diverse. It has been home to the Romans, the Vikings, the Brits, the Saxons, the English, and many more. And as things worsen in Nigeria, many Nigerians, like me, now come to London.',
+                'London is an interesting place. London is diverse. It has been home to the Romans, the Vikings, the Brits, the Saxons, the English, and many more. And as things worsen in Nigeria, many Nigerians, like me, now come to London.',
+                'London is an interesting place. London is diverse. It has been home to the Romans, the Vikings, the Brits, the Saxons, the English, and many more. And as things worsen in Nigeria, many Nigerians, like me, now come to London.'
+            ],
+            image: {
+                url: '/trees-in-pond.jpg',
+                alt: 'Tree Island in a pond',
             },
         },
         {
@@ -31,9 +41,9 @@ export const placesData = [
                 'London is an interesting place. London is diverse. It has been home to the Romans, the Vikings, the Brits, the Saxons, the English, and many more. And as things worsen in Nigeria, many Nigerians, like me, now come to London.'
             ],
             image: {
-                url: '/lakowe-peppersoup.jpg',
-                alt: 'Lakowe Goat meat peppersoup',
+                url: '/beach-bonfire.jpg',
+                alt: 'Bonfire on a beach at night',
             },
-        } ],
+        }, ],
     },
 ]
