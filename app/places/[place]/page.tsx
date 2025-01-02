@@ -25,14 +25,10 @@ export default async function Place({
   }
 
   return (
-    <div className="mx-5 lg:mx-20 my-6 lg:my-20 font-JetbrainsMono text-base lg:text-xl max-w-screen-2xl xl:mx-auto">
-      <h1 className="fixed top-10 lg:top-20 text-5xl lg:text-8xl font-JimNightshade z-20">
+    <div className="mx-5 lg:mx-20 mb-6 lg:mb-20 font-JetbrainsMono text-base lg:text-xl max-w-screen-2xl xl:mx-auto">
+      <h1 className="sticky w-100 pt-10 lg:pt-24 top-0 text-5xl lg:text-8xl font-JimNightshade mb-10" style={{backgroundColor: "#D5B59C"}}>
         Postcard from {placesData[currentIndex].title}
       </h1>
-      <div
-        className="z-10 h-20 lg:h-40 w-100 sticky top-0"
-        style={{ backgroundColor: "#D5B59C" }}
-      ></div>
 
       {placesData[currentIndex].content.map((val, index) => {
         return (
@@ -51,7 +47,7 @@ export default async function Place({
                     );
                   })}
                 </div>
-                <div className="inline-block w-1/3 min-w-[300px]">
+                <div className="inline-block w-1/3 min-w-[300px] rounded overflow-hidden">
                   <Image
                     src={val.image.url}
                     alt={val.image.alt}
@@ -64,7 +60,7 @@ export default async function Place({
               </>
             ) : (
               <>
-                <div className="inline-block w-1/3 min-w-[300px]">
+                <div className="inline-block w-1/3 min-w-[300px] rounded overflow-hidden">
                   <Image
                     src={val.image.url}
                     alt={val.image.alt}
@@ -121,24 +117,6 @@ export default async function Place({
           </Link>
         )}
       </div>
-
-      {/* <p className="fixed top-20 left-0 z-20">
-        <Image
-          src="/top-marker.svg"
-          alt="Top Marker icon"
-          width={700}
-          height={700}
-        />
-      </p>
-
-      <p className="fixed bottom-0 right-10">
-        <Image
-          src="/right-marker.svg"
-          alt="Right Marker icon"
-          width={50}
-          height={50}
-        />
-      </p> */}
     </div>
   );
 }
