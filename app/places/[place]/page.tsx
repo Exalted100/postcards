@@ -85,7 +85,7 @@ export default async function Place({
         );
       })}
 
-      <div className="grid-cols-3 w-11/12 mt-6 lg:mt-20">
+      <div className="hidden lg:block grid-cols-3 w-11/12 mt-6 lg:mt-20">
         {currentIndex < 1 ? (
           <div className="w-1/3 inline-block"></div>
         ) : (
@@ -114,6 +114,35 @@ export default async function Place({
             {placesData[currentIndex + 1].title},{" "}
             {placesData[currentIndex + 1].city} -{" "}
             {placesData[currentIndex + 1].country}
+          </Link>
+        )}
+      </div>
+
+      <div className="block lg:hidden grid-cols-3 w-11/12 mt-6 lg:mt-20">
+        {currentIndex < 1 ? (
+          <div className="w-1/3 inline-block"></div>
+        ) : (
+          <Link
+            className="underline italic w-1/3 inline-block"
+            href={`/places/${placesData[currentIndex - 1].slug}`}
+          >
+            {placesData[currentIndex - 1].title}
+          </Link>
+        )}
+        <Link
+          className="underline italic w-1/3 inline-block text-center"
+          href="/"
+        >
+          Home
+        </Link>
+        {currentIndex > placesData.length - 2 ? (
+          <div className="w-1/3"></div>
+        ) : (
+          <Link
+            className="underline italic w-1/3 inline-block text-right"
+            href={`/places/${placesData[currentIndex + 1].slug}`}
+          >
+            {placesData[currentIndex + 1].title}
           </Link>
         )}
       </div>
