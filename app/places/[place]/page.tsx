@@ -47,7 +47,7 @@ export default async function Place({
                     );
                   })}
                 </div>
-                <div className="inline-block w-1/3 min-w-[300px] rounded overflow-hidden">
+                <div className="self-start inline-block w-1/3 min-w-[300px] rounded overflow-hidden">
                   <Image
                     src={val.image.url}
                     alt={val.image.alt}
@@ -60,7 +60,7 @@ export default async function Place({
               </>
             ) : (
               <>
-                <div className="inline-block w-1/3 min-w-[300px] rounded overflow-hidden">
+                <div className="self-start inline-block w-1/3 min-w-[300px] rounded overflow-hidden">
                   <Image
                     src={val.image.url}
                     alt={val.image.alt}
