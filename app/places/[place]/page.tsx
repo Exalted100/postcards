@@ -25,7 +25,7 @@ export default async function Place({
   }
 
   return (
-    <div className="mx-5 lg:mx-20 mb-6 lg:mb-20 font-JetbrainsMono text-base lg:text-xl max-w-screen-2xl xl:mx-auto">
+    <div className="px-5 lg:px-20 mb-6 lg:mb-20 font-JetbrainsMono text-base lg:text-xl max-w-screen-2xl xl:mx-auto">
       <h1 className="sticky w-100 pt-10 lg:pt-24 top-0 text-5xl lg:text-8xl font-JimNightshade mb-10" style={{backgroundColor: "#D5B59C"}}>
         Postcard from {placesData[currentIndex].title}
       </h1>
